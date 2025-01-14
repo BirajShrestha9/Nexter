@@ -6,22 +6,98 @@
 
 html {
   font-family: "Josefin Sans", sans-serif;
+  font-size: 62.5%;
 }
 
-.logo {
-  width: 150px;
+.logo-tech {
+  display: block;
+  margin-top: 9rem;
+  align-self: center;
+}
+.logo-tech .logo {
+  width: 10rem;
+  margin-right: 10rem;
+}
+.logo-tech .logo:last-child {
+  margin-right: 0;
 }
 
-.grid_1 {
-  height: 80vh;
-  background: url(img/hero.jpeg);
-  background-color: rgba(16, 29, 44, 0.5215686275);
+.heading-secondary {
+  color: #c69963;
+  font-size: 2rem;
+  margin-top: 7rem;
+  text-transform: uppercase;
 }
-.grid_1::before {
-  content: "";
+
+.heading-primary {
+  font-size: 4.5rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  font-size: 1.8rem;
+  width: max-content;
+  background-color: #c69963;
+  padding: 2rem;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1fr;
+}
+.grid_nav {
+  background-color: #c69963;
+  height: 100vh;
+  width: auto;
+}
+.grid_picture {
+  padding: 3rem 6rem 6rem 6rem;
+  height: 55rem;
+  background: linear-gradient(rgba(16, 29, 44, 0.9098039216), rgba(16, 29, 44, 0.9098039216)), url(img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.grid .logo-favicon {
+  width: 180px;
+  align-self: center;
+}
+.grid_realtors {
+  background-color: #101d2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  height: 55rem;
+}
+.grid .top-realtors {
+  font-size: 2.3rem;
+  color: #c69963;
+}
+.grid .realtor-img {
+  width: 9rem;
+  border-radius: 50%;
+}
+.grid .realtors {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  color: #fff;
+}
+.grid .house-sold {
+  font-size: 1rem;
+  color: #757070;
+  display: block;
   position: absolute;
-  background-color: rgba(16, 29, 44, 0.5215686275);
-  z-index: 4;
+  right: 23px;
+  padding-top: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */

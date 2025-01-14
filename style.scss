@@ -5,20 +5,120 @@
 }
 html {
   font-family: "Josefin Sans", sans-serif;
+  font-size: 62.5%;
 }
 
-.logo {
-  width: 150px;
-}
-.grid_1 {
-  height: 80vh;
-  background: url(img/hero.jpeg);
-  background-color: #101d2c85;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #101d2c85;
-    z-index: 4;
+.logo-tech {
+  display: block;
+  margin-top: 9rem;
+  align-self: center;
+  .logo {
+    width: 10rem;
+    margin-right: 10rem;
+  }
+  .logo:last-child {
+    margin-right: 0;
   }
 }
+
+.heading-secondary {
+  color: #c69963;
+  font-size: 2rem;
+  margin-top: 7rem;
+  text-transform: uppercase;
+}
+.heading-primary {
+  font-size: 4.5rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+.btn {
+  &-primary {
+    font-size: 1.8rem;
+    width: max-content;
+    background-color: #c69963;
+    padding: 2rem;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 3rem;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1fr;
+  &_nav {
+    background-color: #c69963;
+    height: 100vh;
+    width: auto;
+  }
+  &_picture {
+    padding: 3rem 6rem 6rem 6rem;
+    height: 55rem;
+    background: linear-gradient(#101d2ce8, #101d2ce8), url(img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    // background-color: #101d2c85;
+  }
+  .logo-favicon {
+    width: 180px;
+    align-self: center;
+  }
+
+  &_realtors {
+    background-color: #101d2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 55rem;
+  }
+  .top-realtors {
+    font-size: 2.3rem;
+    color: #c69963;
+  }
+  .realtor-img {
+    width: 9rem;
+    border-radius: 50%;
+  }
+  .realtors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .house-sold {
+    font-size: 1rem;
+    color: #757070;
+    display: block;
+    position: absolute;
+    right: 23px;
+
+    padding-top: 56px;
+  }
+}
+
+// .overlay-container {
+//   position: relative;
+//   width: 100%;
+//   height: 400px; /* Adjust height as needed */
+
+//   /* Add image as the background */
+//   background: linear-gradient(
+//       to right,
+//       rgba(0, 0, 139, 0.9),
+//       rgba(0, 0, 139, 0.3)
+//     ),
+//     /* Dark blue overlay with transparency */ url(img/back.jpg); /* Replace with your image path */
+
+//   background-size: cover; /* Ensure the image covers the container */
+//   background-position: center; /* Center the image */
+//   color: white; /* For visible text */
+//   display: flex; /* Optional: to center content */
+//   align-items: center;
+//   justify-content: center;
+// }
