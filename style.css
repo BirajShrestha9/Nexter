@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+.grid_1 {
+  height: 80vh;
+  background: url(img/hero.jpeg);
+  background-color: rgba(16, 29, 44, 0.5215686275);
+}
+.grid_1::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(16, 29, 44, 0.5215686275);
+  z-index: 4;
+}
+
+/*# sourceMappingURL=style.css.map */
